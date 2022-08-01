@@ -1,0 +1,1 @@
+curl -s 'https://01.alem.school/assets/superhero/all.json' | jq 'map(select(.id | contains(70))) | .[] | .name'
