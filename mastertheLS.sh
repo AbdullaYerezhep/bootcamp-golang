@@ -1,0 +1,1 @@
+ls -p -t | xargs echo | sed 's/ /,/g'
