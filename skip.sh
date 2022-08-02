@@ -1,1 +1,1 @@
-ls -l | awk 'NR % 2 {print} !(NR % 2) && /pattern/ {print}'
+ls -l | sed -n 'n;p'
