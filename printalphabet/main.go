@@ -8,6 +8,6 @@ func main() {
 	for i := 0; i < len(letters); i++ {
 		letter := letters[i]
 		z01.PrintRune(letter)
-
 	}
+	z01.PrintRune('\n')
 }
