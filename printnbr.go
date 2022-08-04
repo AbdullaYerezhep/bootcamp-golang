@@ -1,10 +1,6 @@
-package main
+package piscine
 
 import "github.com/01-edu/z01"
-
-func main() {
-	PrintNbr(-123)
-}
 
 func PrintNbr(n int) {
 	answer := ""
@@ -20,11 +16,11 @@ func PrintNbr(n int) {
 	}
 	if n < 0 {
 		z01.PrintRune('-')
-		n*=-1
+		n *= -1
 	}
-	z01.PrintRune(rune(n+48))
+	z01.PrintRune(rune( n + 48))
 	runes := []rune(answer)
-	for i := len(answer)-1; i >= 0; i-- {
+	for i := len(answer) - 1; i >= 0; i-- {
 		z01.PrintRune(runes[i])
 	}
 }
