@@ -10,6 +10,7 @@ func PrintComb2() {
 			z01.PrintRune(32)
 			z01.PrintRune(rune(j/10 + 48))
 			z01.PrintRune(rune(j%10 + 48))
+			
 			if(i != 98){
 				z01.PrintRune(44)
 				z01.PrintRune(32)
