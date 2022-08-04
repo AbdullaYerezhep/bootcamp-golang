@@ -21,4 +21,5 @@ func PrintNbr(n int) {
 	for i := len(answer) - 1; i >= 0; i-- {
 		z01.PrintRune(runes[i])
 	}
+	
 }
