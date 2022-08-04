@@ -18,7 +18,7 @@ func PrintNbr(n int) {
 		z01.PrintRune('-')
 		n *= -1
 	}
-	z01.PrintRune(rune( n + 48))
+	z01.PrintRune(rune(n + 48))
 	runes := []rune(answer)
 	for i := len(answer) - 1; i >= 0; i-- {
 		z01.PrintRune(runes[i])
