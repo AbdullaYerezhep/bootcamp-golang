@@ -1,10 +1,10 @@
 package piscine
 
-func StrRev(s string) {
-	chars := []rune(s)
-	revString := ""
+func StrRev(s string) string {
+	chars := []byte(s)
+	var revString []rune
 	for i := len(chars) - 1; i >= 0; i-- {
-		revString += string(chars[i])
+		revString = append(revString, rune(chars[i]))
 	}
-	s = revString
+	return string(revString)
 }
