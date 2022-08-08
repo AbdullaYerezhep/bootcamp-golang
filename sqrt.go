@@ -7,6 +7,5 @@ func Sqrt(nb int) int {
 			m = i
 		}
 	}
-
 	return m
 }
