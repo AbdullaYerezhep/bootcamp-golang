@@ -11,4 +11,5 @@ func main() {
 	for i := 0; i < len(programname); i++ {
 		z01.PrintRune(rune(programname[i]))
 	}
+	z01.PrintRune('\n')
 }
