@@ -8,7 +8,7 @@ import (
 
 func main() {
 	programname := os.Args[0][2:]
-	for i := 0; i < len(programname); i++ {
+	for i := range programname {
 		z01.PrintRune(rune(programname[i]))
 	}
 	z01.PrintRune('\n')
