@@ -9,7 +9,7 @@ func Capitalize(s string) string {
 		if j-1 < 0 {
 			j = 1
 		}
-		if runes[i] >= 'a' && runes[i] <= 'z' && (runes[j-1] == ' ' || runes[j-1] == '+' || i == 0) {
+		if runes[i] >= 'a' && runes[i] <= 'z' && ((runes[j-1] >= ' ' && runes[j-1] <= '/') || (runes[j-1] >= ':' && runes[j-1] <= '@')) || i == 0 {
 			runes[i] = rune(int(runes[i] - 32))
 		}
 	}
