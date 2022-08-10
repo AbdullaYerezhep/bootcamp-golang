@@ -8,7 +8,6 @@ import (
 
 func main() {
 	programname := os.Args[1]
-	print(len(os.Args))
 	for i := 0; i < len(os.Args[0]); i++ {
 		z01.PrintRune(rune(programname[i]))
 	}
