@@ -47,10 +47,11 @@ func main() {
 				}
 			}
 		}
+
 		if insert && order || in && o { // sort
 			com := order_elem + insert_str
 
-			sortprint(com)
+			sort_print(com)
 		} else if insert || in {
 			com := arguments[1] + insert_str
 			for _, char := range com {
@@ -58,7 +59,7 @@ func main() {
 			}
 			z01.PrintRune('\n')
 		} else if order || o {
-			sortprint(order_elem)
+			sort_print(order_elem)
 		} else {
 			for _, char := range arguments[0] {
 				z01.PrintRune(char)
@@ -71,13 +72,13 @@ func main() {
 func error() {
 	fmt.Println("--insert")
 	fmt.Println("  -i")
-	fmt.Println("     This flag inserts the string into the string passed as argument.")
+	fmt.Println("	 This flag inserts the string into the string passed as argument.")
 	fmt.Println("--order")
 	fmt.Println("  -o")
-	fmt.Println("     This flag will behave like a boolean, if it is called it will order the argument.")
+	fmt.Println("	 This flag will behave like a boolean, if it is called it will order the argument.")
 }
 
-func sortprint(com string) {
+func sort_print(com string) {
 	comb := []rune(com)
 
 	for d := range comb {
