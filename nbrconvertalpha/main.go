@@ -29,6 +29,7 @@ func main() {
 		}
 
 	}
+	z01.PrintRune('\n')
 }
 
 func StringToInt(s string) int {
