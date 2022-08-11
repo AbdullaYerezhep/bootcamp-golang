@@ -10,9 +10,7 @@ func main() {
 	args := os.Args[1:]
 	isupper := false
 
-	if len(args) == 0 {
-		print("")
-	} else {
+	if len(args) != 0 {
 		if args[0] == "--upper" {
 			isupper = true
 			args = args[1:]
