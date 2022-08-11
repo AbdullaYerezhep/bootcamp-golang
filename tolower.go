@@ -12,4 +12,3 @@ func ToLower(s string) string {
 	}
 	return string(upperrunes)
 }
-	
