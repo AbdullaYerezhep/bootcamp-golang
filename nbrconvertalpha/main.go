@@ -18,11 +18,7 @@ func main() {
 
 		if isupper && rune(StringToInt(args[i])+64) >= 'A' && rune(StringToInt(args[i])+64) <= 'Z' {
 			args[i] = string(rune(StringToInt(args[i]) + 64))
-		} else if isupper {
-			args[i] = string(' ')
-		}
-
-		if !isupper && rune(StringToInt(args[i])+96) >= 'a' && rune(StringToInt(args[i])+96) <= 'z' {
+		} else if !isupper && rune(StringToInt(args[i])+96) >= 'a' && rune(StringToInt(args[i])+96) <= 'z' {
 			args[i] = string(rune(StringToInt(args[i]) + 96))
 		} else {
 			args[i] = string(' ')
