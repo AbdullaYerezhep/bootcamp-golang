@@ -14,7 +14,7 @@ func main() {
 		isupper = true
 		args = args[1:]
 	}
-	for i := 0; i < len(args); i++ {
+	for i := range args {
 
 		if isupper && rune(StringToInt(args[i])+64) >= 'A' && rune(StringToInt(args[i])+64) <= 'Z' {
 			args[i] = string(rune(StringToInt(args[i]) + 64))
