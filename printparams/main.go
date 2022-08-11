@@ -12,7 +12,6 @@ func main() {
 		for _, char := range arguments[i] {
 			z01.PrintRune(char)
 		}
-		z01.PrintRune(' ')
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
