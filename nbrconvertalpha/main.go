@@ -10,26 +10,30 @@ func main() {
 	args := os.Args[1:]
 	isupper := false
 
-	if args[0] == "--upper" {
-		isupper = true
-		args = args[1:]
-	}
-	for i := range args {
-
-		if isupper && rune(StringToInt(args[i])+64) >= 'A' && rune(StringToInt(args[i])+64) <= 'Z' {
-			args[i] = string(rune(StringToInt(args[i]) + 64))
-		} else if !isupper && rune(StringToInt(args[i])+96) >= 'a' && rune(StringToInt(args[i])+96) <= 'z' {
-			args[i] = string(rune(StringToInt(args[i]) + 96))
-		} else {
-			args[i] = string(' ')
+	if len(args) == 0 {
+		print("")
+	} else {
+		if args[0] == "--upper" {
+			isupper = true
+			args = args[1:]
 		}
+		for i := range args {
 
-		for _, char := range args[i] {
-			z01.PrintRune(char)
+			if isupper && rune(StringToInt(args[i])+64) >= 'A' && rune(StringToInt(args[i])+64) <= 'Z' {
+				args[i] = string(rune(StringToInt(args[i]) + 64))
+			} else if !isupper && rune(StringToInt(args[i])+96) >= 'a' && rune(StringToInt(args[i])+96) <= 'z' {
+				args[i] = string(rune(StringToInt(args[i]) + 96))
+			} else {
+				args[i] = string(' ')
+			}
+
+			for _, char := range args[i] {
+				z01.PrintRune(char)
+			}
+
 		}
-
+		z01.PrintRune('\n')
 	}
-	z01.PrintRune('\n')
 }
 
 func StringToInt(s string) int {
