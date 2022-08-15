@@ -29,7 +29,7 @@ func main() {
 	z01.PrintRune(' ')
 	z01.PrintRune('=')
 	z01.PrintRune(' ')
-	z01.PrintRune('1')
 	z01.PrintRune('2')
+	z01.PrintRune('1')
 	z01.PrintRune('\n')
 }
