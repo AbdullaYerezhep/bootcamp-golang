@@ -19,7 +19,7 @@ func main() {
 				printStr("ERROR: ")
 				printStr(err.Error())
 				z01.PrintRune('\n')
-				printStr("exit status 1")
+				os.Exit(1)
 			}
 			printStr(string(content))
 		}
