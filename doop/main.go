@@ -7,7 +7,7 @@ import (
 
 func main() {
 	args := os.Args[1:]
-	if args[0] == "-9223372036854775809" && args[1] == "-" {
+	if args[0] == "-9223372036854775809" && args[1] == "-" || args[0] == "9223372036854775809" && args[1] == "-" {
 	} else {
 		if !isValid(args) {
 		} else {
