@@ -8,10 +8,9 @@ func Unmatch(a []int) int {
 			if a[i] == a[j] {
 				count++
 			}
-			if count%2 != 0 {
-				return a[i]
-			}
-
+		}
+		if count%2 != 0 {
+			return a[i]
 		}
 
 	}
