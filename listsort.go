@@ -1,10 +1,5 @@
 package piscine
 
-type NodeI struct {
-	Data int
-	Next *NodeI
-}
-
 func ListSort(l *NodeI) *NodeI {
 	Head := l
 	if Head == nil {
